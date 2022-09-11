@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos de interes Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container py-4">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Jumbotron Personalizado</h1>
+        <p class="col-md-8 fs-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sagittis fermentum dolor ut elementum. Quisque et metus turpis. Duis
+          sed sem eget libero dapibus porta non sed mi. Mauris dapibus ex eget
+          elit maximus, eu sodales nibh auctor. Proin eu sollicitudin ante.
+        </p>
+        <button
+          class="btn btn-primary btn-lg"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#ejercisiomodal"
+        >
+          Presioname
+        </button>
+        <div class="modal fade" id="ejercisiomodal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ejercisiomodal">
+                  Realizando modal
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Este es el body del modal creado con el fin de practicar para el
+                curso de HTML y CSS
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form>
+          <h2>Contactame!</h2>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" />
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono</label>
+            <input type="number" class="form-control" id="telefono" />
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="5"></textarea>
+          </div>
+        </form>
+      </div>
+      <div>
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://images.pexels.com/photos/462023/pexels-photo-462023.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                class="img-fluid rounded float-start mt-4"
+                alt="foto"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title">Lucas Waldemar Sanchez</h3>
+                <p class="card-text">
+                  Soy un programador dedicado al Front-End.
+                </p>
+                <footer>
+                  <cite title="email">42994495lucas@gmail.com</cite>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
